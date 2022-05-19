@@ -286,7 +286,7 @@ typedef struct xLIST
         {                                                                                      \
             ( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext;                       \
         }                                                                                      \
-        ( pxTCB ) = ( pxConstList )->pxIndex->pvOwner;                                         \
+        ( pxTCB ) = (TCB_t * ) ( pxConstList )->pxIndex->pvOwner;                                         \
     }
 
 
