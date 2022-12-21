@@ -37,3 +37,8 @@ FreeRTOS files are formatted using the "uncrustify" tool. The configuration file
 *lexicon.txt* contains words that are not traditionally found in an English dictionary. It is used by the spellchecker to verify the various jargon, variable names, and other odd words used in the FreeRTOS code base. If your pull request fails to pass the spelling and you believe this is a mistake, then add the word to *lexicon.txt*. 
 Note that only the FreeRTOS Kernel source files are checked for proper spelling, the portable section is ignored.
 
+## Usage in MCU+ SDK
+
+This repo is consumed by MCU+SDK repo for building the FreeRTOS Kernel Libraries
+for different cores (R5, M4, A53, C66). Please refer [MCU+ SDK Git Repository](https://github.com/TexasInstruments/mcupsdk-core)
+for documentation and instructions to setup the build.
