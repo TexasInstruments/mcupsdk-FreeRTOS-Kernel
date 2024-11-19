@@ -180,3 +180,9 @@ then sort the list, which can be done by running the bash command:
 Note that only the FreeRTOS-Kernel Source Files, [include](include),
 [portable/MemMang](portable/MemMang), and [portable/Common](portable/Common)
 files are checked for proper spelling, and formatting at this time.
+
+## Usage in MCU+ SDK
+
+This repo is consumed by MCU+SDK repo for building the FreeRTOS Kernel Libraries
+for different cores (R5, M4, A53, C66). Please refer [MCU+ SDK Git Repository](https://github.com/TexasInstruments/mcupsdk-core)
+for documentation and instructions to setup the build.
