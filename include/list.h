@@ -293,7 +293,7 @@ typedef struct xLIST
         {                                                                                      \
             ( pxConstList )->pxIndex = ( pxConstList )->xListEnd.pxNext;                       \
         }                                                                                      \
-        ( pxTCB ) = ( pxConstList )->pxIndex->pvOwner;                                         \
+        ( pxTCB ) = (TCB_t * ) ( pxConstList )->pxIndex->pvOwner;                              \
     } while( 0 )
 #else /* #if ( configNUMBER_OF_CORES == 1 ) */
 

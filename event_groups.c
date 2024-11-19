@@ -750,7 +750,7 @@
         /* MISRA Ref 11.5.4 [Callback function parameter] */
         /* More details at: https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/MISRA.md#rule-115 */
         /* coverity[misra_c_2012_rule_11_5_violation] */
-        ( void ) xEventGroupSetBits( pvEventGroup, ( EventBits_t ) ulBitsToSet );
+        ( void ) xEventGroupSetBits( (EventGroupHandle_t) pvEventGroup, ( EventBits_t ) ulBitsToSet );
 
         traceRETURN_vEventGroupSetBitsCallback();
     }
@@ -766,7 +766,7 @@
         /* MISRA Ref 11.5.4 [Callback function parameter] */
         /* More details at: https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/MISRA.md#rule-115 */
         /* coverity[misra_c_2012_rule_11_5_violation] */
-        ( void ) xEventGroupClearBits( pvEventGroup, ( EventBits_t ) ulBitsToClear );
+        ( void ) xEventGroupClearBits( (EventGroupHandle_t) pvEventGroup, ( EventBits_t ) ulBitsToClear );
 
         traceRETURN_vEventGroupClearBitsCallback();
     }
